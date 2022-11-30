@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration:  none !important;
+}
+
+/*================================
+          Navber Start
+=================================*/
+nav{
+    background: #EEEDDE;
+}
+nav ul li{
+    margin-left: 100px;
+    position: relative;
+}
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239 !important;
+    transition: 0.4s;
+    position: relative;
+}
+nav ul li a i{
+    transition: .4s;
+}
+nav ul li a:hover{
+    font-weight: 600;
+}
+nav ul li a:hover i{
+    transform: rotate(177deg);
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23px;
+    height: 3px;
+    background: #F6762E;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .4s;
+}
+nav ul li a:hover:after{
+    opacity: 1;
+}
+
+nav ul li .dropdown{
+    position: absolute;
+    left:0;
+    top: 54px;
+    background: #EEEDDE;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .4s;
+    -webkit-box-shadow: 0px 11px 30px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 30px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 11px 30px 5px rgba(0,0,0,0.75);
+}
+nav ul li:hover .dropdown{
+    transform: rotateX(0deg);
+}
+nav ul li .dropdown ul{
+    padding-left: 0;
+}
+nav ul li .dropdown ul li {
+    margin-left: 0 !important;
+    padding: 5px 20px;
+    border-bottom:1px solid #F6762E;
+}
+
+/*================================
+          Navber End
+=================================*/
+
+/*================================
+          banner start
+=================================*/
+.banner-part{
+    background: #EEEDDE;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 84px;
+    color: #203239;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+.banner-part p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #203239;
+    width: 544px;
+}
+.banner-part .search{
+    position: relative;
+    width: 650px;
+    margin-top: 56px;
+}
+.banner-part .search i{
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-part .search input{
+    width: 100%;
+    padding: 23px 0 23px 56px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.banner-part .search input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(32, 50, 57,.55);
+}
+.banner-part .search button{
+    background: #203239;
+    color: #fff;
+    padding: 13px 41px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner-part .box{
+    display: flex;
+    width: 640px;
+    margin: 56px 0;
+}
+.banner-part .box .item{
+    width: 30%;
+    margin-right: 66px;
+}
+.banner-part .box .item h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 84px;
+    color: #203239;
+}
+.banner-part .box .item h2 span{
+    color: #F6762E;
+    margin-left: -px;
+}
+.banner-part .box .item p{
+    width: auto;
+}
+/*================================
+          banner End
+=================================*/
+
+
+
+/*================================
+          banner End
+=================================*/
+#properti-part{
+    margin: 100px 0;
+}
+#properti-part h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #203239;
+    width: 533px;
+}
+#properti-part .item{
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 64px;
+}
+#properti-part .item:hover{
+    border:1px solid #EEEDDE;
+}
+
+#properti-part .item h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #203239;
+    position: relative;
+}
+#properti-part .item h5 span{
+    color: #F6762E;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#properti-part .item h5::after{
+    content: "";
+    width: 8px;
+    height: 30px;
+    background: #F6762E;
+    border-radius: 5px;
+    position: absolute;
+    left: -31px;
+    top: -3px;
+}
+#properti-part .item p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+#properti-part .item a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #203239;
+    padding-left: 6px;
+    position: relative;
+}
+#properti-part .item a::after{
+    content: "";
+    width: 40PX;
+    height: 30px;
+    background: #EEEDDE;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    z-index: -1;
+    transition: .4s;
+}
+#properti-part .item:hover a::after{
+    width: 103%;
+}
+#properti-part .item a i{
+    font-size: 16px;
+    margin-left: 14px;
+}
+
+/*================================
+          banner End
+=================================*/
+/*================================
+           Residen start
+=================================*/
+#residen-part {
+    background: #EEEDDE;
+    padding: 60px 0;
+    padding-bottom: 170px;
+}
+#residen-part .title h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F6762E;
+}
+#residen-part .title h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #203239;
+    margin-top: 8px;
+    margin-bottom: 64px;
+}
+#residen-part .img{
+    position: relative;
+}
+#residen-part .img .fontside{
+    position: absolute;
+    left: 85px;
+    top: 60px;
+}
+#residen-part h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #203239;
+    width: 507px;
+}
+#residen-part p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #203239;
+    width: 570px;
+    margin-bottom: 48px;
+}
+#residen-part a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #203239;
+    padding: 13px 41px;
+    padding-left: 77px;
+    border-radius: 10px;
+    border: 1px solid #203239;
+    position: relative;
+    margin-right: 48px;
+}
+#residen-part a i{
+    position: absolute;
+    left: 41px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#residen-part a:hover{
+    color: #fff;
+    background: #203239;
+}
+#residen-part .explore {
+    padding-left: 41px;
+}
+
+/*================================
+          Residen End
+=================================*/
+/*================================
+          Kota End
+=================================*/
+#kota-part{
+    margin: 64px 0;
+}
+#kota-part .title h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F6762E;
+}
+#kota-part .title h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #203239;
+    margin-top: 8px;
+    margin-bottom: 64px;
+}
+
+#kota-part .icon i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D6D5C7;
+    font-size: 13px;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-right: 24px;
+    text-align: center;
+    color:#F6762E;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#kota-part .icon i:hover{
+    background: #D6D5C7;
+    opacity: .3;
+}
+#kota-part img{
+    width: 100%;
+}
+#kota-part h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 16px;margin-bottom: 8px;
+}
+#kota-part p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+/*================================
+          Kota End
+=================================*/
+/*================================
+          footer End
+=================================*/
+footer{
+    background: #EEEDDE;
+}
+footer h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #203239;
+    margin-top: 48px;
+    margin-bottom: 63px;
+}
+footer .box{
+    display: flex;
+    width: 649px;
+    justify-content: space-between;
+}
+footer .item{
+    width: 45%;
+    padding: 28px;
+    border: 1px solid rgba(255, 117, 39,.50);
+    border-radius: 10px;
+}
+footer .item .icon{
+    position: relative;
+    margin-bottom: 24px;
+}
+footer.item .icon i{
+    font-size: 24px;
+}
+footer .box .item p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #203239;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    margin-bottom: 24px;
+}
+footer .box .item .button {
+    margin-top: 62px;
+    margin-bottom: 24px;
+}
+footer .box .item a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF7527;
+    background: rgba(255, 117, 39,.20);
+    padding: 19px 81px;
+    border-radius: 10px;
+    
+}
+footer .box .item .btn-2{
+    padding: 19px 72px;
+}
+footer .box .item .button a:hover{
+    background: rgba(255, 117, 39,.80);
+    color: #EEEDDE;
+}
+footer .logo img{
+    margin-right: 21px;
+}
+footer .bottom-footer{
+    background: #203239;
+    margin-top: 64px;
+
+}
+footer .bottom-footer img{
+    padding: 31px 0;
+}
+footer .bottom-footer .social-icon{
+    margin-left: 56px;
+}
+footer .bottom-footer .social-icon i{
+    color: #EEEDDE;
+    font-size: 24px;
+    padding: 40px 32px;
+}
+/*================================
+          footer End
+=================================*/
+
+
+
+
+
